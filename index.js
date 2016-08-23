@@ -37,7 +37,7 @@ module.exports = {
     // Other local variables needed
     var bootstrapPath = target.bowerDirectory + '/AdminLTE/bootstrap';
     var adminltePath  = target.bowerDirectory + '/AdminLTE/dist';
-    var fontsPath     = bootstrapPath + '/fonts');
+    var fontsPath     = bootstrapPath + '/fonts';
 
 
     // Make sure bootswatch is available
