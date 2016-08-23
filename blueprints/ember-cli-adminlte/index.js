@@ -1,7 +1,7 @@
 /*jshint node:true*/
 
 module.exports = {
-  description: 'Add bower dependencies for bootstrap and bootswatch to the project',
+  description: 'Add bower dependencies for bootstrap and admin-lte to the project',
 
   normalizeEntityName: function() {
     // allows us to run ember -g ember-bootstrap-switch and not blow up
@@ -11,8 +11,7 @@ module.exports = {
 
   afterInstall: function(options) {
     return this.addBowerPackagesToProject([
-      {name: 'bootstrap', target: '^3.3.6'},
-      {name: 'bootswatch', target: '^3.3.6'}
+      {name: 'admin-lte', target: '^2.3.6'}
     ]);
   } // :afterInstall
 

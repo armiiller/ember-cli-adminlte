@@ -1,10 +1,9 @@
-ember-cli-bootswatch
+ember-cli-adminlte
 ====================
 
-An [ember-cli addon](http://www.emberaddons.com/) to import a [Bootswatch](http://bootswatch.com/)
-or [Bootstrap](http://getbootstrap.com/) theme, including the fonts and
-JavaScript. This addon is only meant to import the related bower files and
-does NOT contain [Ember Components](http://emberjs.com/guides/components/)
+An [ember-cli addon](http://www.emberaddons.com/) to import a [AdminLTE](https://github.com/almasaeed2010/AdminLTE)
+theme, including the fonts and JavaScript. This addon is only meant to import the
+related bower files and does NOT contain [Ember Components](http://emberjs.com/guides/components/)
 to use within your templates. Other addons provide those features,
 [search emberaddons.com](http://www.emberaddons.com/?query=bootstrap) for
 those.
@@ -19,7 +18,7 @@ following to install the addon and bower dependencies for bootstrap and
 bootswatch:
 
 ```bash
-ember install ember-cli-bootswatch
+ember install ember-cli-adminlte
 ```
 
 Note: This addon _is_ compatible with ember-cli 2.x
@@ -33,7 +32,7 @@ Note: This addon _is_ compatible with ember-cli 2.x
 #### Addon Options
 
 Options for this addon are configured in the projects `ember-cli-build.js` file
-as an 'ember-cli-bootswatch' object property. Available options include:
+as an 'ember-cli-adminlte' object property. Available options include:
 
 * `theme` [string]: Name of the Bootswatch theme to be imported, or `'default'` for the standard Bootstrap theme and `'bootstrap'` for the ["visually enhanced"](http://getbootstrap.com/getting-started/#bootstrap-theme) Bootstrap theme
 * `excludeCSS` [boolean]: By default, the theme's `bootstrap.css` file will be imported
@@ -51,7 +50,7 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
-    'ember-cli-bootswatch': 'cerulean'
+    'ember-cli-adminlte': 'cerulean'
   });
 
   // ... (documentation snipped)
@@ -70,7 +69,7 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
-    'ember-cli-bootswatch': {
+    'ember-cli-adminlte': {
       'theme': 'cerulean',
       'excludeJS': true
     }
@@ -110,7 +109,7 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
-    "ember-cli-bootswatch": {
+    "ember-cli-adminlte": {
       theme: "cerulean",
       excludeCSS: true
     },
@@ -141,7 +140,7 @@ module.exports = function(defaults) {
 ## Usage with other Bootstrap addons
 
 Other Bootstrap addons should be configured NOT to import Bootstrap files
-(styles, themes, fonts, etc.) This way files imported by ember-cli-bootswatch
+(styles, themes, fonts, etc.) This way files imported by ember-cli-adminlte
 do not conflict with other files and versions. But at the same time, if another
 addon requires their own version of a core file (such as JavaScript), then disable
 the import from Bootswatch.
@@ -169,7 +168,7 @@ module.exports = function(environment) {
     // Be sure to add a comma to the previous object property
     // },
 
-    // ember-cli-bootswatch
+    // ember-cli-adminlte
     contentSecurityPolicy: {
       'font-src': "'self' https://fonts.gstatic.com",
       'style-src': "'self' https://fonts.googleapis.com"

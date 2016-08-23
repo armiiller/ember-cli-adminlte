@@ -1,22 +1,22 @@
 {
-  "name": "ember-cli-bootswatch",
-  "description": "An ember-cli addon to import a Bootswatch theme and Bootstrap files.",
-  "version": "1.13.2",
+  "name": "ember-cli-adminlte",
+  "description": "An ember-cli addon to import a AdminLTE theme and Bootstrap files.",
+  "version": "1.0.0",
   "license": "MIT",
-  "author": "Ryan <panman82@gmail.com>",
-  "homepage": "https://github.com/Panman8201/ember-cli-bootswatch",
+  "author": "Austin Miller <austinrmiller1991@gmail.com>",
+  "homepage": "https://github.com/armiiller/ember-cli-adminlte",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Panman8201/ember-cli-bootswatch.git"
+    "url": "https://github.com/armiiller/ember-cli-adminlte.git"
   },
   "bugs": {
-    "url": "https://github.com/Panman8201/ember-cli-bootswatch/issues"
+    "url": "https://github.com/armiiller/ember-cli-adminlte/issues"
   },
   "keywords": [
     "ember-addon",
     "ember-cli",
     "ember",
-    "bootswatch",
+    "adminlte",
     "bootstrap",
     "theme",
     "ui"

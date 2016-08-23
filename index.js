@@ -8,7 +8,7 @@ var fs    = require('fs');
 
 
 module.exports = {
-  name: 'ember-cli-bootswatch',
+  name: 'ember-cli-adminlte',
 
 
   included: function(app, parentAddon) {
@@ -34,46 +34,17 @@ module.exports = {
     }
 
 
-    // Set a default theme if none specified
-    if (!options.theme) {
-      options.theme = 'default';
-      console.log(
-        this.name + ': No theme specified, defaulting to the "default" Bootstrap theme. ' +
-        'Define `"theme":"theme-name"` for the "' + this.name + '" options in your ' +
-        'ember-cli-build.js to get rid of this message.'
-      );
-    }
-
-
     // Other local variables needed
-    var bootstrapPath  = target.bowerDirectory + '/bootstrap/dist';
-    var bootswatchPath = target.bowerDirectory + '/bootswatch';
-    var themePath      = (options.theme === 'default' || options.theme === 'bootstrap' ? bootstrapPath + '/css' : bootswatchPath + '/' + options.theme);
-    var fontsPath      = (options.theme === 'default' || options.theme === 'bootstrap' ? bootstrapPath + '/fonts' : bootswatchPath + '/fonts');
+    var bootstrapPath = target.bowerDirectory + '/AdminLTE/bootstrap';
+    var adminltePath  = target.bowerDirectory + '/AdminLTE/dist';
+    var fontsPath     = bootstrapPath + '/fonts');
 
 
     // Make sure bootswatch is available
-    if (!fs.existsSync(bootswatchPath)) {
+    if (!fs.existsSync(adminltePath)) {
       throw new Error(
-        this.name + ': Bootswatch is not available from bower (' + bootswatchPath + '), ' +
-        'install into your project by running `bower install bootswatch --save`'
-      );
-    }
-
-
-    // Make sure bootstrap is available
-    if (!options.excludeJS && !fs.existsSync(bootstrapPath)) {
-      throw new Error(
-        this.name + ': Bootstrap is not available from bower (' + bootstrapPath + '), ' +
-        'install into your project by running `bower install bootstrap --save`'
-      );
-    }
-
-
-    // Fail if theme does not exist
-    if (!fs.existsSync(themePath)) {
-      throw new Error(
-        this.name + ': Theme (' + options.theme + ') is not available, directory not found [' + themePath + ']'
+        this.name + ': Bootswatch is not available from bower (' + adminltePath + '), ' +
+        'install into your project by running `bower install admin-lte --save`'
       );
     }
 
@@ -143,17 +114,14 @@ module.exports = {
     // Include bootswatch css by default, opt-out option
     if (!options.excludeCSS) {
       target.import({
-        development: themePath + '/bootstrap.css',
-        production:  themePath + '/bootstrap.min.css'
+        development: adminltePath + '/css/AdminLTE.css',
+        production:  adminltePath + '/css/AdminLTE.min.css'
       });
 
-      // The 'bootstrap' theme also needs another file
-      if (options.theme === 'bootstrap') {
-        target.import({
-          development: themePath + '/bootstrap-theme.css',
-          production:  themePath + '/bootstrap-theme.min.css'
-        });
-      }
+      target.import({
+        development: adminltePath + '/css/skins/_all-skins.css',
+        production:  adminltePath + '/css/skins/_all-skins.min.css'
+      });
 
     } // if (!options.excludeCSS)
 
