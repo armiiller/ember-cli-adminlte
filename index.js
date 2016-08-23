@@ -123,6 +123,11 @@ module.exports = {
         production:  adminltePath + '/css/skins/_all-skins.min.css'
       });
 
+      target.import({
+        development: bootstrapPath + '/css/bootstrap.css',
+        production:  bootstrapPath + '/css/bootstrap.min.css'
+      });
+
     } // if (!options.excludeCSS)
 
 
