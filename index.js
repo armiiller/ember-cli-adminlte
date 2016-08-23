@@ -43,7 +43,7 @@ module.exports = {
     // Make sure bootswatch is available
     if (!fs.existsSync(adminltePath)) {
       throw new Error(
-        this.name + ': Bootswatch is not available from bower (' + adminltePath + '), ' +
+        this.name + ': AdminLTE is not available from bower (' + adminltePath + '), ' +
         'install into your project by running `bower install admin-lte --save`'
       );
     }
