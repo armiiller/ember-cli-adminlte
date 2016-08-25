@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-adminlte",
   "description": "An ember-cli addon to import a AdminLTE theme and Bootstrap files.",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "license": "MIT",
   "author": "Austin Miller <austinrmiller1991@gmail.com>",
   "homepage": "https://github.com/armiiller/ember-cli-adminlte",
