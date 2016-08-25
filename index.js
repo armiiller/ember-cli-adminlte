@@ -108,6 +108,11 @@ module.exports = {
         development: bootstrapPath + '/js/bootstrap.js',
         production:  bootstrapPath + '/js/bootstrap.min.js'
       });
+
+      target.import({
+        development: adminltePath + '/js/app.js',
+        production:  adminltePath + '/js/app.min.js'
+      });
     }
 
 
