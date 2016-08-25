@@ -36,6 +36,7 @@ module.exports = {
 
     // Other local variables needed
     var bootstrapPath = target.bowerDirectory + '/AdminLTE/bootstrap';
+    var pluginsPath = target.bowerDirectory + '/AdminLTE/bootstrap';
     var adminltePath  = target.bowerDirectory + '/AdminLTE/dist';
     var fontsPath     = bootstrapPath + '/fonts';
 
@@ -112,6 +113,11 @@ module.exports = {
       target.import({
         development: adminltePath + '/js/app.js',
         production:  adminltePath + '/js/app.min.js'
+      });
+
+      target.import({
+        development: pluginsPath + '/slimScroll/jquery.slimscroll.js',
+        production:  pluginsPath + '/slimScroll/jquery.slimscroll.min.js'
       });
     }
 
