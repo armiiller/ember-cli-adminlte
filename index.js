@@ -119,6 +119,133 @@ module.exports = {
         development: pluginsPath + '/slimScroll/jquery.slimscroll.js',
         production:  pluginsPath + '/slimScroll/jquery.slimscroll.min.js'
       });
+	  
+	  target.import({
+        development: pluginsPath + '/chartjs/Chart.js',
+        production:  pluginsPath + '/Chart.min.js'
+      });
+	  
+	  // bootstrap-slider
+	  target.import({
+        development: pluginsPath + '/bootstrap-slider/bootstrap-slider.js',
+        production:  pluginsPath + '/bootstrap-slider/bootstrap-slider.js'
+      });	  
+	  target.import({
+        development: pluginsPath + '/bootstrap-slider/slider.css',
+        production:  pluginsPath + '/bootstrap-slider/slider.css'
+      });
+	  
+	  // bootstrap-wysihtml5
+	  target.import({
+        development: pluginsPath + '/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.js',
+        production:  pluginsPath + '/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js'
+      });	  
+	  target.import({
+        development: pluginsPath + '/bootstrap-wysihtml5/bootstrap3-wysihtml5.css',
+        production:  pluginsPath + '/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css'
+      });
+	  
+	  // chartjs
+	  target.import({
+        development: pluginsPath + '/chartjs/Chart.js',
+        production:  pluginsPath + '/chartjs/Chart.min.js'
+      });
+	  
+	  // color picker
+	  target.import({
+        development: pluginsPath + '/colorpicker/bootstrap-colorpicker.js',
+        production:  pluginsPath + '/colorpicker/bootstrap-colorpicker.min.js'
+      });
+	  target.import({
+        development: pluginsPath + '/colorpicker/bootstrap-colorpicker.css',
+        production:  pluginsPath + '/colorpicker/bootstrap-colorpicker.min.css'
+      });
+	  
+	  // dataTables
+	  
+	  // fastclick
+	  target.import({
+        development: pluginsPath + '/fastclick/fastclick.js',
+        production:  pluginsPath + '/fastclick/fastclick.min.js'
+      });
+	  
+	  //flot
+	  
+	  // fullcalendar
+	  target.import({
+        development: pluginsPath + '/fullcalendar/fullcalendar.js',
+        production:  pluginsPath + '/fullcalendar/fullcalendar.min.js'
+      });
+	  target.import({
+        development: pluginsPath + '/fullcalendar/fullcalendar.css',
+        production:  pluginsPath + '/fullcalendar/fullcalendar.min.css'
+      });
+	  
+	  // iCheck
+	  
+	  // input-mask
+	  
+	  // ionslider
+	  
+	  // jvectormap
+	  
+	  // knob
+	  target.import({
+        development: pluginsPath + '/knob/jquery.knob.js',
+        production:  pluginsPath + '/knob/jquery.knob.js'
+      });
+	  
+	  // morris
+	  target.import({
+        development: pluginsPath + '/morris/morris.js',
+        production:  pluginsPath + '/morris/morris.min.js'
+      });
+	  target.import({
+        development: pluginsPath + '/morris/morris.css',
+        production:  pluginsPath + '/morris/morris.css'
+      });
+	  
+	  //pace
+	  target.import({
+        development: pluginsPath + '/pace/pace.js',
+        production:  pluginsPath + '/pace/pace.min.js'
+      });
+	  target.import({
+        development: pluginsPath + '/pace/pace.css',
+        production:  pluginsPath + '/pace/pace.min.css'
+      });
+	  
+	  // select2
+	  target.import({
+        development: pluginsPath + '/select2/select2.js',
+        production:  pluginsPath + '/select2/select2.min.js'
+      });
+	  target.import({
+        development: pluginsPath + '/select2/select2.css',
+        production:  pluginsPath + '/select2/select2.min.css'
+      });
+	  
+	  // slimScroll
+	  target.import({
+        development: pluginsPath + '/slimScroll/jquery.slimscroll.js',
+        production:  pluginsPath + '/slimScroll/jquery.slimscroll.min.js'
+      });
+	  
+	  // sparkline
+	  target.import({
+        development: pluginsPath + '/sparkline/jquery.sparkline.js',
+        production:  pluginsPath + '/sparkline/jquery.sparkline.min.js'
+      });
+	  
+	  // timepicker
+	  target.import({
+        development: pluginsPath + '/timepicker/bootstrap-timepicker.js',
+        production:  pluginsPath + '/timepicker/bootstrap-timepicker.min.js'
+      });
+	  target.import({
+        development: pluginsPath + '/timepicker/bootstrap-timepicker.css',
+        production:  pluginsPath + '/timepicker/bootstrap-timepicker.min.css'
+      });
     }
 
 
