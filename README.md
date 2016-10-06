@@ -1,6 +1,7 @@
 ember-cli-adminlte
 ====================
 
+[![npm version](https://badge.fury.io/js/ember-cli-adminlte.svg)](https://badge.fury.io/js/ember-cli-adminlte)
 [![Ember Observer Score](https://emberobserver.com/badges/ember-cli-adminlte.svg)](https://emberobserver.com/addons/ember-cli-adminlte)
 
 An [ember-cli addon](http://www.emberaddons.com/) to import a [AdminLTE](https://github.com/almasaeed2010/AdminLTE)
