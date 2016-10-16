@@ -40,6 +40,7 @@ module.exports = {
       var bootstrapPath = target.bowerDirectory + '/AdminLTE/bootstrap';
       var pluginsPath = target.bowerDirectory + '/AdminLTE/plugins';
       var adminltePath = target.bowerDirectory + '/AdminLTE/dist';
+      var lessPath = target.bowerDirectory + '/AdminLTE/build/less';
       var fontsPath = bootstrapPath + '/fonts';
 
 
@@ -273,6 +274,11 @@ module.exports = {
         target.import({
           development: adminltePath + '/css/AdminLTE.css',
           production: adminltePath + '/css/AdminLTE.min.css'
+        });
+
+        target.import({
+          development: lessPath + '/AdminLTE.less',
+          production: lessPath + '/AdminLTE.min.less'
         });
 
         target.import({
