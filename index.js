@@ -198,6 +198,32 @@ module.exports = {
         // iCheck
 
         // input-mask
+		if (options.includeInputMask) {
+          target.import({
+            development: pluginsPath + '/inputmask/jquery.inputmask.js',
+            production: pluginsPath + '/inputmask/jquery.inputmask.js'
+          });
+          target.import({
+            development: pluginsPath + '/inputmask/jquery.inputmask.extensions.js',
+            production: pluginsPath + '/inputmask/jquery.inputmask.extensions.js'
+          });
+		  target.import({
+            development: pluginsPath + '/inputmask/jquery.inputmask.date.extensions.js',
+            production: pluginsPath + '/inputmask/jquery.inputmask.date.extensions.js'
+          });
+		  target.import({
+            development: pluginsPath + '/inputmask/jquery.inputmask.numeric.extensions.js',
+            production: pluginsPath + '/inputmask/jquery.inputmask.numeric.extensions.js'
+          });
+		  target.import({
+            development: pluginsPath + '/inputmask/jquery.inputmask.phone.extensions.js',
+            production: pluginsPath + '/inputmask/jquery.inputmask.phone.extensions.js'
+          });
+		  target.import({
+            development: pluginsPath + '/inputmask/jquery.inputmask.regex.extensions.js',
+            production: pluginsPath + '/inputmask/jquery.inputmask.regex.extensions.js'
+          });
+        }
 
         // ionslider
 
