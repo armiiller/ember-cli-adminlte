@@ -200,28 +200,28 @@ module.exports = {
         // input-mask
 		if (options.includeInputMask) {
           target.import({
-            development: pluginsPath + '/inputmask/jquery.inputmask.js',
-            production: pluginsPath + '/inputmask/jquery.inputmask.js'
+            development: pluginsPath + '/input-mask/jquery.inputmask.js',
+            production: pluginsPath + '/input-mask/jquery.inputmask.js'
           });
           target.import({
-            development: pluginsPath + '/inputmask/jquery.inputmask.extensions.js',
-            production: pluginsPath + '/inputmask/jquery.inputmask.extensions.js'
+            development: pluginsPath + '/input-mask/jquery.inputmask.extensions.js',
+            production: pluginsPath + '/input-mask/jquery.inputmask.extensions.js'
           });
 		  target.import({
-            development: pluginsPath + '/inputmask/jquery.inputmask.date.extensions.js',
-            production: pluginsPath + '/inputmask/jquery.inputmask.date.extensions.js'
+            development: pluginsPath + '/input-mask/jquery.inputmask.date.extensions.js',
+            production: pluginsPath + '/input-mask/jquery.inputmask.date.extensions.js'
           });
 		  target.import({
-            development: pluginsPath + '/inputmask/jquery.inputmask.numeric.extensions.js',
-            production: pluginsPath + '/inputmask/jquery.inputmask.numeric.extensions.js'
+            development: pluginsPath + '/input-mask/jquery.inputmask.numeric.extensions.js',
+            production: pluginsPath + '/input-mask/jquery.inputmask.numeric.extensions.js'
           });
 		  target.import({
-            development: pluginsPath + '/inputmask/jquery.inputmask.phone.extensions.js',
-            production: pluginsPath + '/inputmask/jquery.inputmask.phone.extensions.js'
+            development: pluginsPath + '/input-mask/jquery.inputmask.phone.extensions.js',
+            production: pluginsPath + '/input-mask/jquery.inputmask.phone.extensions.js'
           });
 		  target.import({
-            development: pluginsPath + '/inputmask/jquery.inputmask.regex.extensions.js',
-            production: pluginsPath + '/inputmask/jquery.inputmask.regex.extensions.js'
+            development: pluginsPath + '/input-mask/jquery.inputmask.regex.extensions.js',
+            production: pluginsPath + '/input-mask/jquery.inputmask.regex.extensions.js'
           });
         }
 
